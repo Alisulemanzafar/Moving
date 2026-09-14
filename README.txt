@@ -1,11 +1,16 @@
-Fleet-X Scroll Truck Hero Demo
+FLEET-X SMOOTH SCROLL TRUCK HERO
 
-Upload these files to the root of a GitHub repository:
-- index.html
-- style.css
-- script.js
-- truck-road.mp4
+GitHub Pages ready demo.
 
-Then enable GitHub Pages: Repository Settings > Pages > Deploy from a branch > main / root.
+Why this version is smoother:
+- The 8-second MP4 is pre-rendered into 192 optimized WebP frames.
+- Scroll selects frames on a canvas instead of repeatedly seeking inside an MP4.
+- requestAnimationFrame + interpolation smooths mouse-wheel and touchpad jumps.
+- Scroll down moves forward; scroll up moves backward.
 
-Scroll down: the video timeline follows page scroll. Scroll upward: it moves backward.
+Publish:
+1. Upload the CONTENTS of this folder to your GitHub repository root.
+2. Settings > Pages > Deploy from a branch > main / root.
+3. Wait for GitHub Pages to publish, then open the generated URL.
+
+Keep the frames folder and all 192 .webp files in it.
